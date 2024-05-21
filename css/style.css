@@ -1,4 +1,12 @@
 /* Estilos generales */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -131,6 +139,7 @@ body {
 .footer {
     margin-top: 200px;
     margin: auto;
+	padding: 40px;
 }
 
 .orange {
