@@ -126,11 +126,7 @@ body {
     background-color: #ff7700;
 }
 
-.card .img-area img {
-    width: 100%;
-    
-    object-fit: cover; /* Mantener la relación de aspecto y recortar la imagen */
-}
+
 
 .social-icon {
     font-size: 2rem; /* Cambia este valor según el tamaño deseado */
@@ -149,10 +145,13 @@ body {
 .color-footer {
     color: #252B32;
 }
+.gif-image{
+    height: 85.5%;
+}
 
 /* Estilos responsivos */
 /* Estilos responsivos */
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .navbar-toggler {
         margin-left: 0; /* Eliminar el margen izquierdo */
         margin-right: 0;
@@ -169,7 +168,7 @@ body {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .carousel-caption {
         bottom: 150px;
     }
