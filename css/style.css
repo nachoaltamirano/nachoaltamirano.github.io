@@ -1,18 +1,21 @@
 /* Estilos generales */
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 * {
+    box-sizing: border-box; /* Asegura que padding y border se incluyan en el width y height */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background: #f1fbff;
+    overflow-x: hidden; /* Previene el desplazamiento horizontal */
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px; /* Añade padding para asegurar que el contenido no se pegue a los bordes */
 }
 
 .section-padding {
@@ -102,11 +105,7 @@ body {
     background: #fff;
 }
 
-.portfolio .card {
-    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
-}
-
-.team .card {
+.portfolio .card, .team .card {
     box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
 }
 
@@ -126,8 +125,6 @@ body {
     background-color: #ff7700;
 }
 
-
-
 .social-icon {
     font-size: 2rem; /* Cambia este valor según el tamaño deseado */
 }
@@ -135,7 +132,7 @@ body {
 .footer {
     margin-top: 200px;
     margin: auto;
-	padding: 40px;
+    padding: 40px;
 }
 
 .orange {
@@ -145,29 +142,18 @@ body {
 .color-footer {
     color: #252B32;
 }
-.gif-image{
+
+.gif-image {
     height: 85.5%;
+    max-width: 100%; /* Asegura que la imagen no desborde el contenedor */
+}
+
+img, video {
+    max-width: 100%; /* Asegura que las imágenes y videos no desborden el contenedor */
+    height: auto;
 }
 
 /* Estilos responsivos */
-/* Estilos responsivos */
-@media (max-width: 991px) {
-    .navbar-toggler {
-        margin-left: 0; /* Eliminar el margen izquierdo */
-        margin-right: 0;
-    }
-}
-
-@media (max-width: 767px) {
-    .navbar-nav {
-        text-align: center;
-    }
-    .navbar-toggler {
-        margin-left: 0; /* Eliminar el margen izquierdo */
-    }
-}
-
-
 @media (max-width: 991px) {
     .carousel-caption {
         bottom: 150px;
@@ -197,12 +183,13 @@ body {
     .social-icon {
         font-size: 1.5rem; /* Ajustar tamaño de iconos sociales en pantallas más pequeñas */
     }
+    .navbar-toggler {
+        margin-left: 0; /* Eliminar el margen izquierdo */
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 767px) {
-    .navbar-nav {
-        text-align: center;
-    }
     .carousel-caption {
         bottom: 125px;
     }
@@ -226,5 +213,7 @@ body {
     .social-icon {
         font-size: 1.2rem; /* Ajustar tamaño de iconos sociales en pantallas más pequeñas */
     }
+    .navbar-nav {
+        text-align: center;
+    }
 }
-
