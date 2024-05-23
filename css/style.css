@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #f1fbff;
+    background: #b4b4b4;
     overflow-x: hidden; /* Previene el desplazamiento horizontal */
 }
 
@@ -17,6 +17,7 @@ body {
     margin-left: auto;
     padding: 0 15px; /* Añade padding para asegurar que el contenido no se pegue a los bordes */
 }
+
 
 .section-padding {
     padding: 100px 0;
@@ -28,7 +29,7 @@ body {
 }
 
 .carousel-caption {
-    bottom: 220px;
+    bottom: 150px;
     z-index: 2;
 }
 
@@ -36,7 +37,7 @@ body {
     font-size: 45px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 .carousel-caption p {
@@ -127,21 +128,23 @@ body {
 
 .social-icon {
     font-size: 2rem; /* Cambia este valor según el tamaño deseado */
+    margin: 30px; /* Eliminamos el margen para reducir la distancia entre los iconos */
 }
 
-.footer {
-    margin-top: 200px;
-    margin: auto;
-    padding: 40px;
+.partner-logo {
+    margin-bottom: 1000px; /* Ajusta este valor según el espacio deseado */
+}
+
+.partner-title {
+    margin-bottom: 10px; /* Ajusta este valor según el espacio deseado */
 }
 
 .orange {
     color: #ff7700;
 }
 
-.color-footer {
-    color: #252B32;
-}
+
+
 
 .gif-image {
     height: 85.5%;
@@ -153,67 +156,91 @@ img, video {
     height: auto;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* Estilos responsivos */
-@media (max-width: 991px) {
-    .carousel-caption {
-        bottom: 150px;
-    }
-    .carousel-caption h5 {
-        font-size: 30px;
-    }
-    .carousel-caption p {
-        width: 80%;
-        font-size: 16px;
-    }
+/* Estilos generales */
+
+/* Media queries para dispositivos pequeños (hasta 600px de ancho) */
+@media only screen and (max-width: 600px) {
     .navbar-nav a {
-        font-size: 14px;
+        font-size: 14px; /* Reducir el tamaño del texto del menú */
     }
-    .section-padding {
-        padding: 50px 0;
-    }
-    .about-text {
-        padding-top: 30px;
-    }
-    .card {
-        margin-bottom: 20px;
-    }
-    .img-area img {
-        height: 200px; /* Ajustar tamaño en pantallas más pequeñas */
-    }
-    .social-icon {
-        font-size: 1.5rem; /* Ajustar tamaño de iconos sociales en pantallas más pequeñas */
-    }
-    .navbar-toggler {
-        margin-left: 0; /* Eliminar el margen izquierdo */
-        margin-right: 0;
+
+    .carousel-item {
+        max-height: 700px;
+        height: 100%;
+        object-fit: contain;
     }
 }
 
-@media (max-width: 767px) {
-    .carousel-caption {
-        bottom: 125px;
-    }
     .carousel-caption h5 {
-        font-size: 20px;
+        font-size: 28px; /* Reducir el tamaño del título del carrusel */
     }
+
     .carousel-caption p {
-        width: 100%;
-        line-height: 1.6;
-        font-size: 14px;
+        width: 80%; /* Ajustar el ancho del párrafo del carrusel */
+        font-size: 14px; /* Reducir el tamaño del texto del párrafo del carrusel */
     }
-    .about-text {
-        padding-top: 20px;
+
+    .navbar-toggler {
+        padding: 1px 3px; /* Reducir el padding del botón del menú desplegable */
     }
-    .card {
-        margin-bottom: 20px;
+
+    .carousel-item {
+        height: auto; /* Altura automática para los items del carrusel */
+        min-height: 200px; /* Altura mínima para los items del carrusel */
     }
-    .img-area img {
-        height: 180px; /* Ajustar tamaño en pantallas más pequeñas */
+
+    .carousel-caption {
+        bottom: 50px; /* Ajustar la posición de la caption */
     }
-    .social-icon {
-        font-size: 1.2rem; /* Ajustar tamaño de iconos sociales en pantallas más pequeñas */
+
+    .powered-by-section {
+        margin-top: 60px; /* Ajustar la posición de la sección */
     }
-    .navbar-nav {
-        text-align: center;
+
+    .footer {
+        margin-top: 100px; /* Ajustar la posición del footer */
+    }
+
+
+/* Media queries para dispositivos medianos (de 601px a 992px de ancho) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .carousel-caption h5 {
+        font-size: 36px; /* Ajustar el tamaño del título del carrusel */
+    }
+
+    .carousel-caption p {
+        width: 70%; /* Ajustar el ancho del párrafo del carrusel */
+        font-size: 16px; /* Ajustar el tamaño del texto del párrafo del carrusel */
+    }
+
+    .navbar-nav a {
+        font-size: 16px; /* Ajustar el tamaño del texto del menú */
+    }
+}
+
+/* Media queries para dispositivos grandes y extra grandes (a partir de 993px de ancho) */
+@media only screen and (min-width: 993px) {
+    .carousel-caption h5 {
+        font-size: 45px; /* Restaurar el tamaño del título del carrusel */
+    }
+
+    .carousel-caption p {
+        width: 60%; /* Restaurar el ancho del párrafo del carrusel */
+        font-size: 18px; /* Restaurar el tamaño del texto del párrafo del carrusel */
+    }
+
+    .navbar-nav a {
+        font-size: 18px; /* Restaurar el tamaño del texto del menú */
     }
 }
