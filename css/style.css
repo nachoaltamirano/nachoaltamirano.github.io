@@ -101,7 +101,7 @@ body{
 .footer {
     background-color: #ffffff; /* Fondo blanco */
     color: #ff6f00 /* Color del texto naranja */
-    padding: 20px 0;
+    
 }
 .footer .social-icons a {
     color: #ff6f00; /* Color de los iconos de redes sociales */
@@ -115,9 +115,6 @@ body{
     margin: 0;
 }
 
-.bg-orange{
-    background-color: #ff6f00;
-}
 
 
 
