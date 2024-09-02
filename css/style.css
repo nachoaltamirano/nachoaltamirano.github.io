@@ -5,11 +5,6 @@
    
 }
 
-.navbar-collapse {
-    /* Establece el fondo negro del menú desplegable */
-    background-color: black;
-}
-
 .navbar {
     background-color: #000000;
     position: relative; /* O 'fixed', dependiendo de cómo quieras que se comporte */
@@ -22,23 +17,9 @@
     z-index: 1000; /* Valor menor para que el slider esté por debajo del navbar */
   }
 
-  .navbar-expand-lg {
-    /* Establece el ancho completo del desplegable en móviles */
-    width: 100%;
-}
-.navbar-nav {
-    /* Asegura que los enlaces se alineen verticalmente en el menú desplegable */
-    margin-top: 1rem;
-}
-.navbar-nav .nav-item {
-    /* Asegura que los elementos de la lista tengan el mismo ancho */
-    width: 100%;
-}
-.navbar-nav .nav-link {
-    /* Asegura que los enlaces ocupen todo el ancho de su contenedor */
-    text-align: center;
-    display: block;
-    padding: 1rem;
+  .navbar-collapse {
+    /* Establece el fondo negro del menú desplegable */
+    background-color: black;
 }
 
 .textito{
