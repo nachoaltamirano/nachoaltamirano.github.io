@@ -13,6 +13,13 @@
     ;
   }
   
+  .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link:focus,
+        .navbar-nav .nav-link:hover {
+            /* Establece el color del texto a blanco cuando el enlace está activo, enfocado o en hover */
+            color: white;
+            background-color: transparent; /* Asegura que el fondo del enlace no cambie */
+        }
   .slider {
     z-index: 1000; /* Valor menor para que el slider esté por debajo del navbar */
   }
