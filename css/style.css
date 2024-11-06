@@ -1,0 +1,193 @@
+
+* {
+    box-sizing: border-box; /* Asegura que padding y border se incluyan en el width y height */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+.navbar {
+    background-color: #000000;
+    position: relative; /* O 'fixed', dependiendo de cómo quieras que se comporte */
+    z-index: 1050; /* Valor por defecto para Bootstrap's navbar */
+    opacity: 1
+    ;
+  }
+  
+  .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link:focus,
+        .navbar-nav .nav-link:hover {
+            /* Establece el color del texto a blanco cuando el enlace está activo, enfocado o en hover */
+            color: white;
+            background-color: transparent; /* Asegura que el fondo del enlace no cambie */
+        }
+  .slider {
+    z-index: 1000; /* Valor menor para que el slider esté por debajo del navbar */
+  }
+
+  .navbar-collapse {
+    /* Establece el fondo negro del menú desplegable */
+    background-color: black;
+}
+
+.textito{
+    font-size: 1.5rem;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar{
+    height: 150px;
+}
+.navbar-toggler{
+    color: orange;
+}
+
+.navbar-toggler-icon{
+    color: orange;
+}
+
+.navbar-brand{
+    margin-left: 50px;
+}
+
+.navbar-brand img {
+    height: 120px; /* Ajusta la altura del logo */
+    width: auto; /* Mantiene la proporción del logo */
+  }
+
+
+  .carousel-caption {
+    position: absolute;
+    top: 50%; /* Posición inicial del texto en el centro */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Color de texto blanco por defecto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px; /* Añade padding para asegurar que el contenido no se pegue a los bordes */
+    box-sizing: border-box; /* Asegura que padding y border se incluyan en el width y height */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+.image-content img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+.border-custom {
+    border: 2px solid #ff9100; /* Cambia el color y el grosor del borde si es necesario */
+    border-radius: 0.5rem; /* Opcional: añade bordes redondeados */
+}
+
+.orange{
+    color:#ff7700;;
+}
+
+.text-orange{
+    color: #966019;
+}
+.a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.texte{
+    font-size: 1.5rem;
+}
+
+.youtubetexto{
+font-size: 2rem;
+}
+
+
+
+
+.support-section {
+    text-align: center;
+    padding: 50px 0;
+}
+.support-section img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Ajusta la altura máxima si es necesario */
+    object-fit: contain;
+}
+.support-text {
+    margin-top: 10px;
+    font-size: 1.5rem; /* Ajusta el tamaño de fuente si es necesario */
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #000000; /* Fondo blanco */
+    color: #ff6f00; /* Color del texto naranja */
+    height: 150px;
+    
+}
+.footer .social-icons a {
+    color: #ff6f00; /* Color de los iconos de redes sociales */
+    font-size: 24px; /* Tamaño de los iconos */
+    margin: 0 10px; /* Espacio entre los iconos */
+}
+.footer .social-icons a:hover {
+    color: #e65100; /* Color de los iconos al pasar el cursor (opcional) */
+}
+.footer p {
+    margin: 0;
+}
+
+.box-with-orange-border {
+    border: 6px solid #ff6f00; /* Define un marco de 3px de grosor y color naranja */
+    padding: 20px; /* Añade espacio interior dentro de la caja */
+    border-radius: 5px; /* Añade bordes redondeados a la caja */
+  }
+
+  .naranjita{
+    color: #fc4b08;
+  }
+  
+
+
+
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        flex-grow: 1;
+        justify-content: center;
+    }
+    .navbar-brand {
+        flex-grow: 0;
+    }
+    .cart-btn {
+        flex-grow: 0;
+        margin-left: auto;
+    }
+}
+
+
+@media (max-width: 576px) { /* Solo para pantallas pequeñas */
+    .navbar-brand {
+        margin-left: -10px; /* Ajusta el valor según el nivel de desplazamiento deseado */
+    }
+}
